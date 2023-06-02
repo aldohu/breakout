@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,800;1,700;1,800&display=swap');
+
+:root {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: rgb(18, 151, 151);
+	font-family: 'Inter', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.game-container {
+	position: relative;
+	width: 70vw;
+	background-color: aliceblue;
+	height: 100vh;
+	border-radius: 5px;
+	color: rgb(18, 151, 151);
+}
+
+.score-display {
+	position: absolute;
+	top: 0;
+	right: 15px;
+
+	/* Adjust other positioning properties as needed */
+}
+.score-display p {
+	color: rgb(18, 151, 151);
+}
+#heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 2rem;
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+}
+h1 {
+	color: white;
+	font-weight: light;
+
+	display: flex;
+	text-align: center;
+}
+.close,
+#rules-btn {
+	padding: 0.4rem 1rem;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+}
+#rules-btn {
+	position: absolute;
+	top: 25px;
+	left: 4px;
+	margin-left: 1rem;
+}
+.rules {
+	width: 30vw;
+	position: absolute;
+	left: -1000px;
+	z-index: 10;
+}
+
+.rules.show {
+	left: 0;
+	background: #333;
+	height: 100%;
+	top: 0;
+}
+p,
+h2 {
+	padding: 15px;
+	color: aliceblue;
+}
+
+.close {
+	margin-left: 15px;
+}
